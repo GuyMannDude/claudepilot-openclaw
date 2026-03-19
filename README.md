@@ -54,12 +54,44 @@ Claude Code installs, configures, and tests everything. You tell it what you wan
 - You have an old laptop gathering dust and want to put it to work
 - You're not a developer and that's totally fine
 
+---
+
+## Level Up Your Setup
+
+Now that you have Claude Code running, here are two open-source tools we built to make your agent setup even better. Both are optional. Both are free. Both were built because we needed them.
+
+### Mnemo Cortex — Memory for Your Agent
+
+Your AI agent forgets everything between sessions. Every conversation starts from scratch. Mnemo Cortex fixes that.
+
+Persistent memory with DAG-based summary lineage. SQLite-backed. Works with any LLM. Your agent remembers what it learned, what it decided, and why.
+
+- 3,000+ messages tested across two live agents
+- 429 summaries with 80% active compaction
+- Six weeks of continuous recall
+
+**→ [github.com/GuyMannDude/mnemo-cortex](https://github.com/GuyMannDude/mnemo-cortex)**
+
+### Sparks Router — Stop Burning Tokens
+
+Not every task needs an expensive model. A heartbeat check doesn't need Opus. A quick lookup doesn't need Gemini Pro.
+
+Sparks Router automatically routes tasks to the right model tier. Heavy reasoning goes to Smart models. Code gen goes to Utility. Background work goes to Free. Your budget stays controlled.
+
+Three tiers. Automatic classification. Budget caps. You set the ceiling, the router handles the rest.
+
+**→ [github.com/GuyMannDude/sparks-router](https://github.com/GuyMannDude/sparks-router)**
+
+---
+
+*Both projects are part of [Project Sparks](https://projectsparks.ai) — a creative technology studio building open-source AI infrastructure in Half Moon Bay, CA.*
+
 ## Related Projects
 
 | Project | What It Does |
 |---------|-------------|
 | [OpenClaw](https://github.com/GuyMannDude/openclaw) | The agent framework — runs your bots |
-| [Mnemo Cortex v2](https://github.com/GuyMannDude/mnemo-cortex-v2) | Memory system — your bots remember things |
+| [Mnemo Cortex](https://github.com/GuyMannDude/mnemo-cortex) | Memory system — your bots remember things |
 | [Sparks Router](https://github.com/GuyMannDude/sparks-router) | Model routing — keeps costs down without sacrificing quality |
 
 ## About
