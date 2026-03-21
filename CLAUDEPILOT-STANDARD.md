@@ -105,6 +105,36 @@ Only recommend these if they make sense for the user's situation. If someone is 
 - Show them where to get help: OpenClaw docs, Discord community, GitHub issues
 - Ask if they have any remaining questions
 
+## The Sparks Patch Method
+
+When you need the user to edit a config file (like openclaw.json, package.json, .env, etc.), don't ask them to replace the whole file. Instead, show them three things:
+
+### 1. FIND THIS (locate where you are)
+Show a few lines of their existing file so they can find the exact spot:
+```
+"settings": {
+  "model": "old-model-name",    ← this is what you're changing
+  "temperature": 0.7
+}
+```
+
+### 2. CHANGE TO THIS (the actual edit)
+Just the line(s) that change:
+```
+  "model": "new-model-name",
+```
+
+### 3. VERIFY (what it looks like after)
+The edited section with surrounding context so they can confirm it's right:
+```
+"settings": {
+  "model": "new-model-name",    ← changed
+  "temperature": 0.7
+}
+```
+
+This way the user never has to replace an entire file. They find the landmark, make the edit, and visually confirm it matches. Use this method for every config file edit throughout the installation.
+
 ## Resources You Should Reference When Relevant
 
 - OpenClaw Documentation: https://docs.openclaw.ai

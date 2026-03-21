@@ -294,6 +294,36 @@ Based on what you learned about their business:
 - What should they watch for? Scaling issues, cost creep, model improvements
 - When should they revisit the architecture?
 
+## The Sparks Patch Method
+
+When editing config files (openclaw.json, package.json, .env, etc.), always use the Sparks Patch Method. Never dump an entire replacement file — show three things:
+
+### 1. FIND THIS (locate where you are)
+Show a few lines of the existing file so the user can find the exact spot:
+```
+"settings": {
+  "model": "old-model-name",    ← this is what you're changing
+  "temperature": 0.7
+}
+```
+
+### 2. CHANGE TO THIS (the actual edit)
+Just the line(s) that change:
+```
+  "model": "new-model-name",
+```
+
+### 3. VERIFY (what it looks like after)
+The edited section with surrounding context so they can confirm it's right:
+```
+"settings": {
+  "model": "new-model-name",    ← changed
+  "temperature": 0.7
+}
+```
+
+This way the user never has to replace an entire file. They find the landmark, make the edit, and visually confirm it matches. When using Claude Code, CC can make the edit directly — but still show the VERIFY step so the user sees what changed.
+
 ## Resources
 
 - OpenClaw Documentation: https://docs.openclaw.ai
